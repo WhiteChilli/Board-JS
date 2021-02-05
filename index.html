@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBoard</title>
+
+    <!-- css  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+<!-- Main greeting, name to be entered -->
+
+<div class="top-section">
+    <div id="date"></div>
+    <h1 class="greeting">
+        <span id="timeaday"></span>
+        <span id="name">Anna</span>
+    </h1>
+    
+    <!-- Realtime clock -->
+    
+    <div id="clock"></div>
+</div>
+<hr>
+<div class="quote">
+    <p id="newquote">some text</p>
+</div>
+
+<div class="container">
+    
+    <div class="message">
+        <h3 class="title">What are you grateful for today?</h3>
+        <input type="text" id="motivation" name="motivation" class="motivation"><br>
+        <input type="submit" value="Save" class="dark-btn">
+    </div>
+
+    <div class="personal">
+        <h3 class="title">Check your progress</h3>
+        <button class="dark-btn">Go to My Goals</button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+<!-- Javascript -->
+<script src="app.js"></script>
+
+
+</html>

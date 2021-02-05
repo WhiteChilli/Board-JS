@@ -1,0 +1,169 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+body {
+    background: url('./map.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+h1.greeting {
+    font-size: 4em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 2px rgb(145, 144, 144);
+    transition-property: text-shadow;
+    transition-duration: 1s;
+    /* padding-bottom: 0; */
+    margin-bottom: 0;
+}
+
+h1.greeting:hover {
+    text-shadow: 2px 2px 8px rgb(72, 72, 72);
+    
+
+}
+
+
+#clock {
+    font-family:'Reem Kufi', sans-serif;
+    font-size: 2em;
+    width: 100%;
+    /* position: absolute; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(121, 119, 119);
+}
+
+#date {
+    font-family:'Reem Kufi', sans-serif;
+    font-size: 2em;
+    width: 100%;
+    /* position: absolute; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(121, 119, 119);
+    
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: baseline;
+
+}
+
+.container {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.message {
+    /* border: 1px solid gray; */
+    padding: 1em;
+    background-color: rgba(245, 238, 248, 0.5);
+    border-radius: 12px;
+    width: 100%;
+    min-height: 150px;
+    margin: 2em;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+span#name {
+    color:rgb(39, 39, 39);
+}
+
+
+.motivation {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: none;
+    border-bottom: 1px dashed gray;
+    height: 2em;
+}
+
+.dark-btn {
+    margin: 1em;
+    border-radius: 15px;
+    background-color: rgb(39, 38, 38);
+    color: #fff;
+    border: none;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+}
+
+.dark-btn:hover {
+    background-color: rgb(44, 165, 174);
+}
+
+.personal {
+    padding: 1em;
+    background-color: rgba(245, 238, 248, 0.5);
+    border-radius: 12px;
+    width: 100%;
+    margin: 3em;
+    text-align: center;
+    
+}
+
+
+    .quote,
+#newquote {
+    text-align: center;
+    font-family:'Dawning of a New Day', cursive;
+    font-size: 1.5em;
+    /* font-style: italic; */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin: 0;
+    display: block;
+}
+
+#newquote:before {
+    content: '- '
+}
+#newquote:after {
+    content: ' -'
+}
+
+.quote {
+display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1.greeting {
+      font-size: 3em;
+    }
+    
+    /* #clock {
+        font-size: 1em;
+    } */
+    #newquote {
+        font-size: 1.2em;
+    }
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    #date {
+        font-size: 1.4em;
+    }
+  }
